@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Expose some myths about what can and can't be done in Locker Service</description>
+    <formFactors>Large</formFactors>
+    <label>Fall in Love with Locker Service</label>
+    <navType>Standard</navType>
+    <tabs>welcome</tabs>
+    <tabs>jquery</tabs>
+    <tabs>d3</tabs>
+    <tabs>react</tabs>
+    <tabs>angularjs</tabs>
+    <tabs>angular</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

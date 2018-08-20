@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable" access="global" >
+        <ltng:require scripts="{!$Resource.jquery}"
+                      afterScriptsLoaded="{!c.afterJqueryLoaded}" />
+
+
+    <input type="button" value="Hide" id="hide-button" />
+    <input type="button" value="Show" id="show-button" />
+
+    <div>
+        <div id="box"></div>
+    </div>
+</aura:component>
