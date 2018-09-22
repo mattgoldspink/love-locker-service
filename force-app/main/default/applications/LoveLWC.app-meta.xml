@@ -13,6 +13,5 @@
     <tabs>d3</tabs>
     <tabs>react</tabs>
     <tabs>angularjs</tabs>
-    <tabs>angular</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

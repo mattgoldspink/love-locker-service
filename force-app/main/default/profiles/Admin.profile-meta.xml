@@ -22,10 +22,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>angular</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>welcome</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>

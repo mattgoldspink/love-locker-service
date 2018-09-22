@@ -1,9 +1,5 @@
 <aura:component>
-    <ltng:require scripts="{!join(',',$Resource.react,$Resource.react_dom,$Resource.like_button_react)}"
+    <ltng:require scripts="{!$Resource.react_neighbourhood_app}"
                     afterScriptsLoaded="{!c.afterReactLoaded}" />
-
-    <h2>Add React in One Minute</h2>
-    <p>This page demonstrates using React with no build tooling.</p>
-
-    <div id="like_button_container"></div>
+    <div id="root"></div>
 </aura:component>

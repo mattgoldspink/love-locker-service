@@ -1,12 +1,30 @@
 <aura:component implements="force:appHostable" access="global" >
-        <ltng:require scripts="{!$Resource.jquery}"
-                      afterScriptsLoaded="{!c.afterJqueryLoaded}" />
+    <ltng:require scripts="{!$Resource.jquery}"
+                    afterScriptsLoaded="{!c.afterJqueryLoaded}" />
 
-
-    <input type="button" value="Hide" id="hide-button" />
-    <input type="button" value="Show" id="show-button" />
+    <div class="slds-button-group" role="group">
+        <input type="button" class="slds-button slds-button_neutral" value="Hide" id="hide-button" />
+        <input type="button" class="slds-button slds-button_neutral" value="Show" id="show-button" />
+    </div>
 
     <div>
-        <div id="box"></div>
+        <div id="box">
+            <div class="slds-text-heading_large">Hello from jQuery!</div>
+            <pre>
+({
+    afterJqueryLoaded : function(cmp, event, helper) {
+        $('#hide-button').click(function(){
+            $('#box').slideUp();
+        });
+
+        $('#show-button').click(function(){
+            $('#box').slideDown();
+        });
+    }
+})
+            </pre>
+        </div>
     </div>
+
+
 </aura:component>
