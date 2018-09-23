@@ -7,9 +7,18 @@
 
             <p class="slds-m-vertical_large">Of course it does!</p>
 
-            <h3 data-id="start" class="slds-m-vertical_large slds-text-heading_medium">Let's Get Started</h3>
-
             <c:JqueryTest></c:JqueryTest>
+
+            <h3 data-id="start" class="slds-m-vertical_large slds-text-heading_medium">Notes</h3>
+
+            <p>In this example I've simply loaded jquery into the Lightning component using the normal:
+                <pre>&lt;ltng:require scripts="{!$Resource.jquery}" afterScriptsLoaded="{!c.afterJqueryLoaded}" /&gt;</pre>
+            </p>
+            <p>I've added a single callback into my controller to call my <pre>afterJqueryLoaded</pre> function once it's loaded into the page. From there I simply... call some normal jQuery! It attaches event handlers to the DOM elements in the component and then uses jquery <pre>slideUp/slideDown</pre> animation functions to show and hide the block of code. There is literally nothing other than pure jQuery here.</p>
+
+            <h3 data-id="start" class="slds-m-vertical_large slds-text-heading_medium">Should you use jQuery?</h3>
+
+            <p>No. In 2018 there is no need to use jQuery. All modern browsers support the common features in standard ways now, and given Salesforce only supports IE11+ there is really no need for jQuery. I'd highly recommend checking out the website <a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a> to see how to migrate away from these API's.</p>
         </div>
     </article>
 </aura:component>

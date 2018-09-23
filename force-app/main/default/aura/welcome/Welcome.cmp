@@ -4,6 +4,13 @@
             <div class="slds-text-align_center">
                 <h3 class="slds-m-vertical_large slds-text-heading_large">Stop Worrying and Fall in Love with Locker Service</h3>
             </div>
+
+            <div>
+                <p>This Lightning app is the common to my Dreamforce 2018 talk <b>Stop Worrying and Fall in Love with Locker Service</b></p>
+                <p>The tabs along the tab are different demo's and examples given in the talk to show various third party libraries running inside of Lightning with no modification - where modification was needed it will be listed.</p>
+                <p>You can clone this source and deploy it to your own org from github here: <a href="https://github.com/mattgoldspink/love-locker-service">https://github.com/mattgoldspink/love-locker-service</a></p>
+                <p>If you've any questions or feedback feel free to email me at <a href="mailto:mattgoldspink1@gmail.com">mattgoldspink1@gmail.com</a> or open a ticket on the github project.</p>
+            </div>
         </div>
     </article>
 </aura:component>
