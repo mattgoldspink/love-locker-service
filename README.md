@@ -54,7 +54,7 @@ Here's a summary of how you can iteratively modify and explore the samples inclu
 On the command line run
 
 ```bash
-sfdx force:org:create -s -f config/project-scratch-def.json -a scratch-1
+sfdx force:org:create -s -f config/project-scratch-def.json -a lovelockerservice
 ```
 
 This creates a scratch org where you can load your code and then run it.
@@ -64,7 +64,7 @@ This creates a scratch org where you can load your code and then run it.
 On the command line run
 
 ```bash
-sfdx force:source:push
+sfdx force:source:push -u lovelockerservice
 ```
 
 ### View the app in the org
@@ -72,7 +72,7 @@ sfdx force:source:push
 You can open the code straight to the welcome page by running the below in the command line:
 
 ```bash
-sfdx force:org:open -p /lovelockerservice/n/welcome
+sfdx force:org:open -p /lovelockerservice/n/welcome -u lovelockerservice
 ```
 
 This command opens a web browser, connects to your scratch org, and logs in. If the Love Locker Service app isn't displayed, select it from the App Launcher. From their you can check out the examples.

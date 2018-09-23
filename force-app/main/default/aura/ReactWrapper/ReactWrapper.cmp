@@ -1,5 +1,14 @@
 <aura:component implements="force:appHostable">
-    <div>
+    <article class="slds-card slds-p-horizontal_large slds-p-bottom_large">
+        <div class="slds-m-vertical_xx-large">
+            <div class="slds-text-align_center">
+                <h3 class="slds-m-vertical_large slds-text-heading_large">React Doesn't Work in Locker Service?</h3>
+            </div>
+        </div>
+        <p>Yes it does! Here's a relatively complex single page app taken from <a href="https://github.com/marygoldspink/neighborhood_map_react_app">https://github.com/marygoldspink/neighborhood_map_react_app</a>.</p>
+        <p>I've simply compiled it down using gulp and loaded it as a static resource. The app uses Leaflet.js (compiled into the static resource) and makes calls to foursquare's API (Needs to be registered with Salesforce's external callouts). Other than wrapping all CSS to include the <pre>.THIS</pre> prefix and also changing some sizing, the app is untouched from it's original format!</p>
+    </article>
+    <div class="slds-m-top_large">
         <c:ReactDemo></c:ReactDemo>
     </div>
 </aura:component>

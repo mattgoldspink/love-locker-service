@@ -1,15 +1,21 @@
 <aura:component implements="force:appHostable">
-    <article class="slds-card">
-        <div class="slds-m-vertical_xx-large slds-p-horizontal_large">
+    <article class="slds-card slds-p-horizontal_large">
+        <div class="slds-m-vertical_xx-large">
             <div class="slds-text-align_center">
                 <h3 class="slds-m-vertical_large slds-text-heading_large">D3 Doesn't Work in Locker Service?</h3>
             </div>
 
             <p class="slds-m-vertical_large">Of course it does!</p>
 
-            <h3 data-id="start" class="slds-m-vertical_large slds-text-heading_medium">Let's Get Started</h3>
-
             <c:D3Demo></c:D3Demo>
+
+            <h3 data-id="start" class="slds-m-vertical_large slds-text-heading_medium">Notes</h3>
+
+            <p>In this example I've simply loaded d3 into the Lightning component using the normal ltng:require syntax.</p>
+            <p>I've added a single callback in the controller, <pre>afterD3Loaded</pre>, once it's loaded into the page. From there I run regular d3 code! In this example I've hardcoded the data, but you could easily pull it back using a Server Action</p>
+
+            <p>The d3 code I took is from the example here: <a href="https://bl.ocks.org/mbostock/4062045">https://bl.ocks.org/mbostock/4062045</a>. As you'll see there is no changes to the d3 example to make it Lightning or Locker Service compliant except to render in the &lt;svg&gt; root element dynamically.</p>
+
         </div>
     </article>
 </aura:component>

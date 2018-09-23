@@ -1,5 +1,5 @@
 <aura:component implements="force:appHostable">
-    <article class="slds-card">
+    <article class="slds-card slds-p-horizontal_large">
         <div class="welcomeWrapper slds-m-vertical_xx-large">
             <div class="slds-text-align_center">
                 <h3 class="slds-m-vertical_large slds-text-heading_large">Stop Worrying and Fall in Love with Locker Service</h3>

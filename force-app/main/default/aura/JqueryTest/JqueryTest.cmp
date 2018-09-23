@@ -1,4 +1,4 @@
-<aura:component implements="force:appHostable" access="global" >
+<aura:component>
     <ltng:require scripts="{!$Resource.jquery}"
                     afterScriptsLoaded="{!c.afterJqueryLoaded}" />
 

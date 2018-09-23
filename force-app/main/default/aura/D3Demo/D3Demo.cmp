@@ -1,6 +1,6 @@
 <aura:component>
-    <ltng:require scripts="{!$Resource.d3 + '/d3.min.js'}"
-                    afterScriptsLoaded="{!c.afterD3Loaded}" />
+    <ltng:require scripts="{!$Resource.d3 + '/d3.min.js'}" afterScriptsLoaded="{!c.afterD3Loaded}" />
+
     <div class="chart"></div>
 
 </aura:component>
